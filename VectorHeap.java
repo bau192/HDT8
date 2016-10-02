@@ -1,8 +1,9 @@
 import java.util.*;
 
 /**
- * http://www.code2learn.com/2011/09/heapsort-array-based-implementation-in.html
- * https://estructuras-de-datos.wikispaces.com/Heapsort
+ * FARHAN KHWAJA 09/24/2011; HeapSort (matriz basada en) la implementación en Java. http://www.code2learn.com/2011/09/heapsort
+ *-array-based-implementation-in.html[con acceso el 1 de octubre del 2016]
+ * Mauricio Solar.  2008.  Heapsort.  https://estructuras-de-datos.wikispaces.com/Heapsort[con acceso el 1 de octubre del 2016]
  */
 
 public class VectorHeap<E extends Comparable<E>>implements PriorityQeue<E> {
@@ -41,8 +42,6 @@ public class VectorHeap<E extends Comparable<E>>implements PriorityQeue<E> {
 	}
 	
 	
-	
-	
 // Otros
 	//Ordena el heap luego de modificarlo...
 	public void HeapSort(){
@@ -74,5 +73,3 @@ public class VectorHeap<E extends Comparable<E>>implements PriorityQeue<E> {
 		
 	}
 }
-
-
