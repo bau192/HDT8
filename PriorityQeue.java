@@ -1,4 +1,6 @@
-
+/*
+*declaracion de la interface PriorityQeue
+*/
 public interface PriorityQeue<E> {
 
 	public boolean isEmpty();
