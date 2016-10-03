@@ -8,8 +8,8 @@ public class Paciente {
 	private String [] nombres=new String[100];
 	private String [] grado=new String[100];
 	
-	FileReader file;
-	BufferedReader buffer;
+	//FileReader file;
+	//BufferedReader buffer;
 	
 	public Paciente() {
 		// TODO Auto-generated constructor stub
@@ -48,10 +48,18 @@ public class Paciente {
 	
 	
 	public String leerArchivo (String direccion) {
-		String linea;
+		String linea="";
 		String linea2;
-		linea = null;
+		
+		 
+           
 		try {
+			FileInputStream fstream = new FileInputStream("paciente.txt");
+            DataInputStream entrada = new DataInputStream(fstream);
+            BufferedReader buffer = new BufferedReader(new InputStreamReader(entrada));
+		
+		linea = null;
+			
 			linea2= null;
 			try {
 				while ((linea2 = buffer.readLine()) != null) 
