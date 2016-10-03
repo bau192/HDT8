@@ -6,26 +6,41 @@ import java.util.*;
  * Mauricio Solar.  2008.  Heapsort.  https://estructuras-de-datos.wikispaces.com/Heapsort[con acceso el 1 de octubre del 2016]
  */
 
+ 
+ /*
+ *Creacion de clase Vector Heap
+ */
 public class VectorHeap<E extends Comparable<E>>implements PriorityQeue<E> {
 	
 	private Vector<E> vector;
 	private int size,i;
 	private E temporal;
 	
-// Vector Heap
+/*
+ *Vector Heap constructor
+ */
 	public VectorHeap(){
 		vector = new Vector<E>();
 		size = 0;
 	}
 	
+/*
+ * metodo isEmpty
+ */
 	public boolean isEmpty(){
 		return size==0;
 	}
 	
+/*
+ *Metodo getFist
+ */
 	public E getFirst(){
 		return vector.firstElement();
 	}
 	
+/*
+ *metodo removeFirst
+ */
 	public E removeFirst(){
 		if (isEmpty()){
 			System.out.println("Is Empty");;
@@ -35,6 +50,9 @@ public class VectorHeap<E extends Comparable<E>>implements PriorityQeue<E> {
 		return temporal = vector.remove(0);
 	}
 	
+/*
+ *metodo Add
+ */
 	public void add(E val){
 		vector.add(val);
 		size++;
@@ -42,8 +60,10 @@ public class VectorHeap<E extends Comparable<E>>implements PriorityQeue<E> {
 	}
 	
 	
-// Otros
-	//Ordena el heap luego de modificarlo...
+/*
+*Otros
+*Ordena el heap luego de modificarlo...
+*/
 	public void HeapSort(){
 		i = this.size -1;
 		while(Parent(i)){
@@ -71,5 +91,11 @@ public class VectorHeap<E extends Comparable<E>>implements PriorityQeue<E> {
 		vector.set(a, vector.elementAt(b));
 		vector.set(b,temporal);
 		
+	
+	
+		
 	}
+	
+	
+	
 }
