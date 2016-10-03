@@ -16,7 +16,8 @@ public class main {
 		// Se inicializan las variable.
 		 file = new Paciente();
 		 texto = file.leerArchivo("paciente.txt");
-		 texto1="";
+		//System.out.println(texto);
+		texto1="";
 		 vec = new VectorHeap<String>();
 		 
 		 // Ingreso de los pacientes 
